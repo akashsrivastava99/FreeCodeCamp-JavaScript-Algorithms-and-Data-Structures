@@ -1,0 +1,30 @@
+function rot13(str) {
+  console.log("A".charCodeAt())
+  console.log("Z".charCodeAt())
+  for(let i=65;i<=90;i++){
+ // console.log(String.fromCharCode(i))
+  }
+  let regex=/[A-Z]/
+  let arr=str.split("")
+  let farr=[]
+  
+
+  for(let i of arr){
+    let a
+    if(regex.test(i)){
+      a=i.charCodeAt()-13
+      //console.log(a)
+      if(a<65){
+        a=a+26
+      }
+      farr.push(String.fromCharCode(a))
+    }else{
+      farr.push(i)
+    }
+  }
+  console.log("farr>"+farr.join(""))
+
+  return farr.join("");
+}
+
+rot13("SERR PBQR PNZC");

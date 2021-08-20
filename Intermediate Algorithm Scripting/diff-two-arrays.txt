@@ -1,0 +1,16 @@
+function diffArray(arr1, arr2) {
+  var newArr = [...arr1,...arr2];
+  let farr=[]
+  console.log("newarr>"+newArr)
+  for(let i of newArr){
+    if(arr1.includes(i)&&arr2.includes(i)){
+      
+    }else{
+      farr.push(i)
+    }
+  }
+  console.log("farr>"+farr)
+  return farr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);

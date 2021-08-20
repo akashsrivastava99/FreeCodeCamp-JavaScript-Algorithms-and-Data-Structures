@@ -1,0 +1,16 @@
+function destroyer(arr,...vals) {
+  console.log(vals)
+  let farr=[];
+  for(let i of arr){
+    if(vals.includes(i)){
+
+    }else{
+      farr.push(i)
+    }
+  }
+  
+  console.log(farr)
+  return farr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);

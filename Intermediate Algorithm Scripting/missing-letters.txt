@@ -1,0 +1,16 @@
+function fearNotLetter(str) {
+  let a=str.charCodeAt(0);
+
+  console.log(a)
+  for(let i in str){
+    if(a===str.charCodeAt(i)){
+      console.log(str.charCodeAt(i),a)
+      a++;
+    }else{
+      console.log(String.fromCharCode(a) )
+      return String.fromCharCode(a) 
+    }
+  }
+}
+
+fearNotLetter("abce");

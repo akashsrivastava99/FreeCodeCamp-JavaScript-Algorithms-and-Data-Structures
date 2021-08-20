@@ -1,0 +1,12 @@
+function addTogether() {
+ let args=[...arguments]
+ if(args.some((ele)=> typeof ele !== 'number')){
+   return undefined
+ }else if(args.length==1){
+   return sum=>addTogether(args[0],sum)
+ }else{
+   return args[0]+args[1]
+ }
+}
+
+console.log(addTogether(2,3));

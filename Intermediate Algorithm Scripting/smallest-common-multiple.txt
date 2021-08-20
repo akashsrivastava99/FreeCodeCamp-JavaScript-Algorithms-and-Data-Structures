@@ -1,0 +1,24 @@
+function smallestCommons(arr) {
+  arr[0]>arr[1]?arr.reverse():arr
+  let min=arr[0],max=arr[1]
+  console.log(min,max)
+  let scm=max;
+  while(true){
+    let isScm=true
+    for(let i=min;i<=max;i++){
+      if(scm%i!==0){
+        isScm=false
+        break
+      }
+    }
+    if(isScm==true){
+      console.log(scm)
+      return scm
+    }else{
+      scm++
+    }
+  }
+}
+
+//console.log(smallestCommons([2,10]))
+smallestCommons([2,10]);

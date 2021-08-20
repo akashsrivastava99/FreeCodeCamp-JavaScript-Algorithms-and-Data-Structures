@@ -1,0 +1,22 @@
+function sumPrimes(num) {
+  let sum=0;
+  for(let n=1;n<=num;n++){
+  let c=0
+   for(let i=1;i<=n;i++){
+     if(n%i==0){
+       c++
+     }
+   }
+   if(c==2){
+       //console.log("prime no>"+n)
+       sum=sum+n
+     }
+  }
+  console.log("prime sum"+sum)
+  
+  
+  return sum;
+
+}
+
+sumPrimes(10);

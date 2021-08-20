@@ -1,0 +1,16 @@
+function truthCheck(collection, pre) {
+  let f;
+  for(let i of collection){
+    console.log(i[pre])
+    if(i[pre]){
+      f=true
+    }else{
+      f=false
+      return f
+    }
+  }
+  console.log("f>"+f)
+  return f;
+}
+
+truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");

@@ -1,0 +1,25 @@
+function translatePigLatin(str) {
+  let vow=[..."aeiou"]
+  let arr=[...str]
+  let farr=[]
+  //console.log(arr.push(arr.shift))
+  //console.log(arr)
+  if(vow.includes(str[0])){
+    return str+"way"
+  }else{
+    for(let i in str){
+      if(vow.includes(str[i])==false){
+        arr.shift()
+        arr.push(str[i])
+      }else{
+        break
+      }
+    }
+    console.log(arr.join("")+"ay")
+
+    return arr.join("")+"ay"
+  }
+}
+
+translatePigLatin("consonant");
+

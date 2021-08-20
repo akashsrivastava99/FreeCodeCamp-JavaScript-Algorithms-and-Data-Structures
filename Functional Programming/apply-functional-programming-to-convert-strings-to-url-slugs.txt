@@ -1,0 +1,7 @@
+// Only change code below this line
+function urlSlug(title) {
+  console.log(title.trim().toLowerCase().split(" ").join("-"))
+return title.trim().toLowerCase().split(/\s+/).join("-")
+
+}
+// Only change code above this line

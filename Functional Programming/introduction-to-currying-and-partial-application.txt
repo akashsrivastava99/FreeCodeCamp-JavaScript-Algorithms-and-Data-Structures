@@ -1,0 +1,13 @@
+function add(x) {
+  // Only change code below this line
+  // return function b(y){
+  //   return function c(z){
+  //     return x+y+z
+  //   }
+  // }
+  const a=y=>z=>x+y+z
+  return a
+
+  // Only change code above this line
+}
+add(10)(20)(30);

@@ -1,0 +1,9 @@
+function spinalCase(str) {
+  let regex=/\s|_+/g
+  str=str.replace(/([a-z])([A-Z])/g,"$1 $2")
+  let fstr=str.split(regex).join("-").toLowerCase()
+  console.log(str)
+  return fstr;
+}
+
+spinalCase('This Is Spinal Tap');
